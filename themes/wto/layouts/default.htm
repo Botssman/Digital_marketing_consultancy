@@ -38,7 +38,9 @@
         {% page %}
     </main>
 
-    {% partial "site/footer" %}
+<footer class="footer section">
+	<div class="container w-container">{% partial "site/footer" %}{% partial "site/scripts" %}</div>
+</footer>
 
     {% framework extras %}
 

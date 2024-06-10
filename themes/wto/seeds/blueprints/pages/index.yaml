@@ -19,6 +19,11 @@ fields:
     text_mobile:
         label: text_mobile
         type: text
+    logo:
+        label: Logo
+        type: mediafinder
+        mode: image
+        maxItems: '1'
     main_menu:
         label: main_menu
         type: repeater

@@ -62,6 +62,13 @@ fields:
         label: Twitter
         type: text
         tab: Social media
+    logo:
+        label: Image app ios
+        type: mediafinder
+        mode: image
+        maxItems: 1
+        span: left
+        tab: Basic settings
     mail_text:
         label: Email
         type: text

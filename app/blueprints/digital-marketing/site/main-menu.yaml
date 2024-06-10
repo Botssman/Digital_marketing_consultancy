@@ -1,0 +1,64 @@
+uuid: settings-main-menu
+handle: Site\MainMenu
+type: single
+name: Main menu
+
+primaryNavigation:
+    label: Settings site
+    icon: icon-spinner
+    order: 499
+
+navigation:
+    label: Main menu
+    parent: Site\MainMenu
+    icon: icon-magic
+    order: 200
+
+fields:
+    text:
+        label: Text info
+        type: text
+    text_mobile:
+        label: Text info text_mobile
+        type: text
+    main_menu:
+        type: repeater
+        titleFrom: Menu items
+        form: 
+            fields:
+                list:
+                    label: Menu blocks
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: Menu link
+                            icon: icon-video-camera
+                            fields:
+                                menu_link_name:
+                                    label: Name link
+                                    type: text
+                                    span: left
+                                menu_link_link:
+                                    label: Menu link
+                                    type: pagefinder
+                        menu_dropdown:
+                            name: Menu dropdown
+                            icon: icon-video-camera
+                            fields:
+                                menu_dropdown_title:
+                                    label: Title dropdown
+                                    type: text
+                                    span: left
+                                list:
+                                    label: List links
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            menu_dropdown_name:
+                                                label: Name link
+                                                type: text
+                                            menu_dropdown_link:
+                                                label: Link
+                                                type: pagefinder
+

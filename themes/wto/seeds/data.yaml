@@ -1,0 +1,8 @@
+-
+    name: index
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/index.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_index
+        update_existing: true

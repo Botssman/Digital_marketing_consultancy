@@ -1,0 +1,5 @@
+{% for block in blocks %}
+    {% if block.hide_content == false %}
+        {% partial 'blocks/' ~ str_slug(block.type) block=block %}
+    {% endif %}
+{% endfor %}

@@ -1,0 +1,38 @@
+uuid: settings-footer
+handle: Site\Footer
+type: single
+name: Footer
+
+navigation:
+    label: Footer menu
+    parent: Site\MainMenu
+    icon: icon-magic
+    order: 200
+
+fields:
+    product_list:
+        label: Product list
+        type: repeater
+        titleFrom: Product list
+        form: 
+            fields:
+                footer_text_link:
+                    label: Name link
+                    type: text
+                    span: left
+                footer_link:
+                    label: Link
+                    type: pagefinder
+    company_list:
+        label: Company list
+        type: repeater
+        titleFrom: Product list
+        form: 
+            fields:
+                footer_text_link:
+                    label: Name link
+                    type: text
+                    span: left
+                footer_link:
+                    label: Link
+                    type: pagefinder

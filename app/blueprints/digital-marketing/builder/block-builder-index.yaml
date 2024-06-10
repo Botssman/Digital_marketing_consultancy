@@ -1,0 +1,79 @@
+uuid: block-builder-index
+handle: BlockBuilderIndex
+type: mixin
+name: Builder Index
+
+fields:
+    blocks:
+        label: Blocks
+        type: repeater
+        displayMode: builder
+        span: adaptive
+        tab: Blocks
+        groups:
+            products_home:
+                name: Section products home
+                description: Section resources home
+                icon: icon-file-text-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ProductsHome
+            advantages:
+                name: Section product advantages
+                icon: icon-database
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Advantages  
+            resources_support:
+                name: Section resources support
+                icon: icon-cloud-upload
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ResourcesSupport
+            icons:
+                name: Block icons
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Icons
+            press_room_media_kit:
+                name: Block press room media kit
+                icon: icon-cloud-upload
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\PressRoomMediaKit
+            abouth_info:
+                name: Section abouth info
+                description: Section abouth info
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\AbouthInfo 
+            questions:
+                name: Block question
+                icon: icon-question
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Questions
+            contact_us_form:
+                name: Section form
+                description: Section form
+                icon: icon-tasks
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ContactUsForm
+            forms:
+                name: Forms
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Forms

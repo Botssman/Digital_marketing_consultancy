@@ -1,0 +1,374 @@
+uuid: page_index
+handle: page_index
+type: single
+name: '{{ this.page.meta_title }}'
+drafts: false
+primaryNavigation:
+    label: Страницы
+    icon: icon-folder-open-o
+    order: 205
+navigation:
+    label: '{{ this.page.meta_title }}'
+    parent: page_index
+    icon: icon-file-text
+    order: '10'
+fields:
+    text|raw:
+        label: text|raw
+        type: text
+    text_mobile:
+        label: text_mobile
+        type: text
+    main_menu:
+        label: main_menu
+        type: repeater
+        form:
+            fields:
+                list:
+                    label: Список
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: menu-link
+                            fields:
+                                menu_link_name:
+                                    label: menu_link_name
+                                    type: text
+                                menu_link_link|link:
+                                    label: menu_link_link|link
+                                    type: text
+                        menu_dropdown:
+                            name: menu-dropdown
+                            fields:
+                                menu_dropdown_title:
+                                    label: menu_dropdown_title
+                                    type: text
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            menu_dropdown_name:
+                                                label: menu_dropdown_name
+                                                type: text
+                                            menu_dropdown_link|link:
+                                                label: menu_dropdown_link|link
+                                                type: text
+                                            menu_dropdown_link_|_link:
+                                                label: 'menu_dropdown_link | link'
+                                                type: text
+    blocks:
+        label: blocks
+        type: repeater
+        displayMode: builder
+        groups:
+            products_home:
+                name: products-home
+                fields:
+                    title|raw:
+                        label: title|raw
+                        type: text
+                    subtitle|raw:
+                        label: subtitle|raw
+                        type: text
+                    image:
+                        label: Изображение
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    hide_content:
+                        label: 'Скрыть блок'
+                        type: switch
+                        default: false
+            resources_support:
+                name: resources-support
+                fields:
+                    image:
+                        label: Изображение
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    title|raw:
+                        label: title|raw
+                        type: text
+                    subtitle|raw:
+                        label: subtitle|raw
+                        type: text
+                    text_btn:
+                        label: text_btn
+                        type: text
+                    link_btn:
+                        label: link_btn
+                        type: text
+                    hide_content:
+                        label: 'Скрыть блок'
+                        type: switch
+                        default: false
+            abouth_info:
+                name: abouth-info
+                fields:
+                    text|raw:
+                        label: text|raw
+                        type: text
+                    image:
+                        label: Изображение
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    image_mob:
+                        label: image_mob
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    title:
+                        label: Название
+                        type: text
+                    hide_content:
+                        label: 'Скрыть блок'
+                        type: switch
+                        default: false
+            icons:
+                name: icons
+                fields:
+                    icon_rep:
+                        label: icon_rep
+                        type: repeater
+                        form:
+                            fields:
+                                icon:
+                                    label: icon
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                text|raw:
+                                    label: text|raw
+                                    type: text
+                    hide_content:
+                        label: 'Скрыть блок'
+                        type: switch
+                        default: false
+            press_room_media_kit:
+                name: press-room-media-kit
+                fields:
+                    press_room_media_kit_title:
+                        label: press_room_media_kit_title
+                        type: text
+                    press_room_media_kit_subtitle:
+                        label: press_room_media_kit_subtitle
+                        type: text
+                    press_room_media_kit_rep:
+                        label: press_room_media_kit_rep
+                        type: repeater
+                        form:
+                            fields:
+                                icon:
+                                    label: icon
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                title_list:
+                                    label: title_list
+                                    type: text
+                                text_list:
+                                    label: text_list
+                                    type: text
+                                text_link_list:
+                                    label: text_link_list
+                                    type: text
+                                link_list:
+                                    label: link_list
+                                    type: text
+                    press_room_media_kit_image:
+                        label: press_room_media_kit_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    hide_content:
+                        label: 'Скрыть блок'
+                        type: switch
+                        default: false
+            questions:
+                name: questions
+                fields:
+                    question_title:
+                        label: question_title
+                        type: text
+                    question_subtitle|raw:
+                        label: question_subtitle|raw
+                        type: text
+                    question_link_btn:
+                        label: question_link_btn
+                        type: text
+                    question_lists:
+                        label: question_lists
+                        type: repeater
+                        form:
+                            fields:
+                                title_list:
+                                    label: title_list
+                                    type: text
+                                text_list|raw:
+                                    label: text_list|raw
+                                    type: text
+                    hide_content:
+                        label: 'Скрыть блок'
+                        type: switch
+                        default: false
+            contact_us_form:
+                name: contact-us-form
+                fields:
+                    contact_us_form_image:
+                        label: contact_us_form_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    contact_us_form_title:
+                        label: contact_us_form_title
+                        type: text
+                    hide_content:
+                        label: 'Скрыть блок'
+                        type: switch
+                        default: false
+            advantages:
+                name: advantages
+                fields:
+                    card:
+                        label: card
+                        type: repeater
+                        form:
+                            fields:
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                title_card|raw:
+                                    label: title_card|raw
+                                    type: text
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            title_list:
+                                                label: title_list
+                                                type: text
+                                            text|raw:
+                                                label: text|raw
+                                                type: text
+                    hide_content:
+                        label: 'Скрыть блок'
+                        type: switch
+                        default: false
+    text_app:
+        label: text_app
+        type: text
+    link_app_ios:
+        label: link_app_ios
+        type: text
+    image_app_ios:
+        label: image_app_ios
+        type: mediafinder
+        mode: image
+        maxItems: '1'
+    link_app_google:
+        label: link_app_google
+        type: text
+    image_app_google:
+        label: image_app_google
+        type: mediafinder
+        mode: image
+        maxItems: '1'
+    text_social:
+        label: text_social
+        type: text
+    link_in:
+        label: link_in
+        type: text
+    link_facebook:
+        label: link_facebook
+        type: text
+    link_youtube:
+        label: link_youtube
+        type: text
+    link_instagram:
+        label: link_instagram
+        type: text
+    link_twitter:
+        label: link_twitter
+        type: text
+    product_list:
+        label: product_list
+        type: repeater
+        form:
+            fields:
+                footer_text_link:
+                    label: footer_text_link
+                    type: text
+                footer_link|link:
+                    label: footer_link|link
+                    type: text
+    company_list:
+        label: company_list
+        type: repeater
+        form:
+            fields:
+                footer_text_link:
+                    label: footer_text_link
+                    type: text
+                footer_link|link:
+                    label: footer_link|link
+                    type: text
+    adress:
+        label: adress
+        type: text
+    mail_text:
+        label: mail_text
+        type: text
+    technical_support:
+        label: Technical_support
+        type: text
+    technical_support_link:
+        label: Technical_support_link
+        type: text
+    sales_and_business:
+        label: sales_and_business
+        type: text
+    sales_and_business_link:
+        label: sales_and_business_link
+        type: text
+    copyright:
+        label: copyright
+        type: text
+    terms_of_use_text:
+        label: terms_of_use_text
+        type: text
+    terms_of_use_link:
+        label: terms_of_use_link
+        type: text
+    privacy_policy:
+        label: privacy_policy
+        type: text
+    privacy_policy_link:
+        label: privacy_policy_link
+        type: text
+    list:
+        label: Список
+        type: repeater
+        displayMode: builder
+        groups:
+            menu_link:
+                name: menu-link
+                fields:
+                    hide_content:
+                        label: 'Скрыть блок'
+                        type: switch
+                        default: false
+            menu_dropdown:
+                name: menu-dropdown
+                fields:
+                    hide_content:
+                        label: 'Скрыть блок'
+                        type: switch
+                        default: false

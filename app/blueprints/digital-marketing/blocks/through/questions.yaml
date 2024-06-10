@@ -1,0 +1,37 @@
+uuid: through-questions
+name: Block questions
+type: mixin
+handle: Blocks\Through\Questions
+multisite: true
+
+fields:
+    question_title:
+        label: Title
+        type: text
+        tab: Questions
+    question_subtitle:
+        label: Subtitle
+        type: richeditor
+        tab: Questions
+    question_text_btn:
+        label: Text btn
+        type: text
+        tab: Questions
+    question_link_btn:
+        label: Link btn
+        type: text
+    hide_button:
+        type: switch
+        label: Hide btn
+    question_lists:
+        type: repeater
+        titleFrom: Questions lists
+        tab: Questions
+        form:
+            fields:
+                title_list:
+                    label: Title list
+                    type: text
+                text_list:
+                    label: Text list
+                    type: richeditor

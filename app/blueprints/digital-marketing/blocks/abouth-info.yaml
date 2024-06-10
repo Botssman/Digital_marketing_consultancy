@@ -1,0 +1,18 @@
+uuid: sections-lumin-abouth-info
+name: Section abouth info
+type: mixin
+handle: Blocks\AbouthInfo
+
+fields:
+    title:
+        label: Title
+        type: text
+    text:
+        label: Description
+        type: richeditor
+    image:
+        label: Image
+        type: mediafinder
+    image_mob:
+        label: Image mobile
+        type: mediafinder

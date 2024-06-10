@@ -1,0 +1,19 @@
+uuid: theme_update
+handle: theme_update
+type: global
+name: Update theme
+
+navigation:
+  icon: icon-refresh
+  order: 10
+
+fields:
+  update_status:
+    label: Update
+    type: switch
+    default: true
+    tab: Theme update
+  update_password:
+    label: Update password
+    tab: Theme update
+    type: sensitive

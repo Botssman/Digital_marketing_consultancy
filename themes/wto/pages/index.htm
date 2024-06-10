@@ -1,0 +1,22 @@
+url = "/"
+layout = "default"
+title = "index"
+
+[section pageData]
+handle = "Pages\Index"
+
+[global options]
+handle = "Options\Options"
+
+[section mainmenu]
+handle = "Site\MainMenu"
+
+[section footer]
+handle = "Site\Footer"
+
+[section footersettings]
+handle = "Site\Footer"
+==
+<div class="main-page">
+    {% partial 'page-blocks' blocks = pageData.blocks %}
+</div>

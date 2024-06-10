@@ -14,4 +14,3 @@ jobs:
         server: a126242.hostus3.fornex.host
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-

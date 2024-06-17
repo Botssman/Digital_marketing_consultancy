@@ -41,7 +41,7 @@ fields:
                                     span: left
                                 menu_link_link:
                                     label: Menu link
-                                    type: texter
+                                    type: text
                         menu_dropdown:
                             name: Menu dropdown
                             icon: icon-video-camera

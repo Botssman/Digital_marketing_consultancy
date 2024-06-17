@@ -4,6 +4,9 @@ type: mixin
 handle: Blocks\ResourcesSupport
 
 fields:
+    id: 
+        label: Id sections
+        type: text
     title:
         label: Title
         type: text

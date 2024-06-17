@@ -1,14 +1,17 @@
-uuid: sections-lumin-icons
-name: Section connect to anything
+uuid: sections-lumin-icons-info
+name: Section icons info
 type: mixin
-handle: Blocks\Icons
+handle: Blocks\IconsInfo
 
 fields:
     id: 
         label: Id sections
         type: text
+    title: 
+        label: Title
+        type: text
     icon_rep:
-        label: Add block icon
+        label: Add block icon info
         type: repeater
         titleFrom: Add block icon
         form: 
@@ -20,4 +23,7 @@ fields:
                     maxItems: 1
                 text:
                     label: Text
+                    type: text
+                text_info:
+                    label: Text info
                     type: text

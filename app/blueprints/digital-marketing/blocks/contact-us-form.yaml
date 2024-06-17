@@ -4,6 +4,9 @@ type: mixin
 handle: Blocks\ContactUsForm
 
 fields:
+    id: 
+        label: Id sections
+        type: text
     contact_us_form_title:
         label: Title
         type: text

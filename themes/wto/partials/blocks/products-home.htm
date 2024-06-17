@@ -1,5 +1,5 @@
-<section class="section section_maxh_920">
-	<div class="container w-container">
+<section class="section section_maxh_920" id="{{ block.id }}">
+	<div class="container w-container" id="{{ block.id }}">
 		<div class="b-columns mob_revers">
 			<div class="b-columns__col b-columns__col_51 b-columns__col_align_center tb_100">
 				<div class="h-wrap h-wrap_mg-bt_30 mob_mg-bt_20">
@@ -12,6 +12,9 @@
 						{{ block.subtitle|raw }}
 					</div>
 				</div>
+				<a href="{{ block.link_btn }}" class="b-button b-button_blue b-button_maxw_210 mob_center w-button">
+					{{ block.text_btn }}
+				</a>
 			</div>
 			<div class="b-columns__col b-columns__col_49 tb_100">
 				<img class="b-image b-image_prod" src="{{ block.image|media }}" alt="" loading="lazy">

@@ -5,6 +5,9 @@ handle: Blocks\Through\Questions
 multisite: true
 
 fields:
+    id: 
+        label: Id sections
+        type: text
     question_title:
         label: Title
         type: text

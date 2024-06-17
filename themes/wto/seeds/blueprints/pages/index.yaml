@@ -40,8 +40,8 @@ fields:
                                 menu_link_name:
                                     label: menu_link_name
                                     type: text
-                                menu_link_link|link:
-                                    label: menu_link_link|link
+                                menu_link_link:
+                                    label: menu_link_link
                                     type: text
                         menu_dropdown:
                             name: menu-dropdown
@@ -57,8 +57,8 @@ fields:
                                             menu_dropdown_name:
                                                 label: menu_dropdown_name
                                                 type: text
-                                            menu_dropdown_link|link:
-                                                label: menu_dropdown_link|link
+                                            menu_dropdown_link:
+                                                label: menu_dropdown_link
                                                 type: text
                                             menu_dropdown_link_|_link:
                                                 label: 'menu_dropdown_link | link'
@@ -76,6 +76,12 @@ fields:
                         type: text
                     subtitle|raw:
                         label: subtitle|raw
+                        type: text
+                    text_btn:
+                        label: text_btn
+                        type: text
+                    link_btn:
+                        label: link_btn
                         type: text
                     image:
                         label: Изображение
@@ -266,25 +272,32 @@ fields:
                         label: 'Скрыть блок'
                         type: switch
                         default: false
-    text_app:
-        label: text_app
-        type: text
-    link_app_ios:
-        label: link_app_ios
-        type: text
-    image_app_ios:
-        label: image_app_ios
-        type: mediafinder
-        mode: image
-        maxItems: '1'
-    link_app_google:
-        label: link_app_google
-        type: text
-    image_app_google:
-        label: image_app_google
-        type: mediafinder
-        mode: image
-        maxItems: '1'
+            icons_info:
+                name: icons-info
+                fields:
+                    title:
+                        label: Название
+                        type: text
+                    icon_rep:
+                        label: icon_rep
+                        type: repeater
+                        form:
+                            fields:
+                                icon:
+                                    label: icon
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                text_info:
+                                    label: text_info
+                                    type: text
+                                text|raw:
+                                    label: text|raw
+                                    type: text
+                    hide_content:
+                        label: 'Скрыть блок'
+                        type: switch
+                        default: false
     text_social:
         label: text_social
         type: text

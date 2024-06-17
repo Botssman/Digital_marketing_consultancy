@@ -40,6 +40,13 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\Icons
+            icons_info:
+                name: Block icons info
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\IconsInfo
             press_room_media_kit:
                 name: Block press room media kit
                 icon: icon-cloud-upload

@@ -4,6 +4,9 @@ type: mixin
 handle: Blocks\ProductsHome
 
 fields:
+    id: 
+        label: Id sections
+        type: text
     title:
         label: Title
         type: text
@@ -13,3 +16,9 @@ fields:
     image:
         label: Image
         type: mediafinder
+    text_btn:
+        label: Text btn
+        type: richeditor
+    link_btn:
+        label: Link btn
+        type: richeditor

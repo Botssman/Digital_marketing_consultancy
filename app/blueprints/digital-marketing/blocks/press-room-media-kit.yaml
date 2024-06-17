@@ -4,6 +4,9 @@ type: mixin
 handle: Blocks\PressRoomMediaKit
 
 fields:
+    id: 
+        label: Id sections
+        type: text
     press_room_media_kit_title:
         label: Title
         type: text

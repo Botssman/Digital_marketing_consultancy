@@ -4,6 +4,9 @@ type: mixin
 handle: Blocks\Advantages
 
 fields:
+    id: 
+        label: Id sections
+        type: text
     card:
         label: Add card
         type: repeater

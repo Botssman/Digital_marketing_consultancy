@@ -18,7 +18,7 @@ fields:
         type: mediafinder
     text_btn:
         label: Text btn
-        type: richeditor
+        type: text
     link_btn:
         label: Link btn
-        type: richeditor
+        type: text

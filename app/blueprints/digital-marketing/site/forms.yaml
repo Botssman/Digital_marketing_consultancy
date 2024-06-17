@@ -1,0 +1,70 @@
+uuid: wto_forms
+handle: wto_forms
+type: global
+name: Form setting
+navigation:
+  label: Forms
+  icon: icon-envelope-o
+  order: 10
+
+fields:
+  forms:
+    label: Forms
+    type: repeater
+    prompt: Add form setting
+    tab: Edit form
+    form:
+      fields:
+        selector:
+          label: Select CSS class
+        email_to:
+          label: Send to
+          comment: You can send multiple addresses separated by commas
+          span: left
+        template:
+          label: Email template
+          span: right
+          comment: Letter template name
+        sender_name:
+          label: From
+          span: left
+        reply_to:
+          label: Reply-to address
+          span: right
+        copy_cc:
+          label: CC
+          span: left
+        copy_bcc:
+          label: BCC
+          span: right
+        hide_form:
+          type: checkbox
+          label: Hide form
+          span: left
+        hide_lbox:
+          type: checkbox
+          label: Hide lightbox
+          span: right
+        hide_delay:
+          label: Delay
+          span: left
+        lbox_selector:
+          label: Select lightbox
+          span: right
+        redirect:
+          label: Forward to page after submission
+          span: full
+        new_window:
+          label: Forward in the new window
+          type: checkbox
+          span: left
+        success_message:
+          label: Successfull submission message
+          span: full
+        error_message:
+          label: Error submission message
+          span: full
+        sender_replay:
+          label: Reply to the sender
+          span: full
+          comment: Name of template

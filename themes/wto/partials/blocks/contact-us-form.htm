@@ -10,62 +10,7 @@
 						{{ block.contact_us_form_title }}
 					</div>
 				</div>
-				<div data-duration-in="300" data-duration-out="100" data-current="Tab 1" data-easing="ease" class="b-tabs w-tabs">
-					<div class="b-tabs__menu b-tabs__menu_mg-bt_30 w-tab-menu">
-						<a data-w-tab="Tab 1" class="b-tabs__link b-tabs__link_form w-inline-block w-tab-link w--current">
-							<div>
-								Tech support
-							</div>
-						</a>
-						<a data-w-tab="Tab 2" class="b-tabs__link b-tabs__link_form w-inline-block w-tab-link">
-							<div>
-								Partners
-							</div>
-						</a>
-						<a data-w-tab="Tab 3" class="b-tabs__link b-tabs__link_form w-inline-block w-tab-link">
-							<div>
-								Sales
-							</div>
-						</a>
-						<a data-w-tab="Tab 4" class="b-tabs__link b-tabs__link_form w-inline-block w-tab-link">
-							<div>
-								Media
-							</div>
-						</a>
-						<a data-w-tab="Tab 5" class="b-tabs__link b-tabs__link_form w-inline-block w-tab-link">
-							<div>
-								Careers/HR
-							</div>
-						</a>
-					</div>
-					<div class="b-tabs__content b-tabs__content_min w-tab-content">
-						<div data-w-tab="Tab 1" class="b-tabs__pane w-tab-pane w--tab-active">
-							<div class="b-form w-form">
-								{% component 'FormTechSupport' %}
-							</div>
-						</div>
-						<div data-w-tab="Tab 2" class="b-tabs__pane w-tab-pane">
-							<div class="b-form w-form">
-								{% component 'FormPartners' %}
-							</div>
-						</div>
-						<div data-w-tab="Tab 3" class="b-tabs__pane w-tab-pane">
-							<div class="b-form w-form">
-								{% component 'FormSales' %}
-							</div>
-						</div>
-						<div data-w-tab="Tab 4" class="b-tabs__pane w-tab-pane">
-							<div class="b-form w-form">
-								{% component 'FormMedia' %}
-							</div>
-						</div>
-						<div data-w-tab="Tab 5" class="b-tabs__pane w-tab-pane">
-							<div class="b-form w-form">
-								{% component 'FormCareers' %}
-							</div>
-						</div>
-					</div>
-				</div>
+				{% partial "formContacts" %}
 			</div>
 		</div>
 	</div>

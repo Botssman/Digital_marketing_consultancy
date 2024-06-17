@@ -29,12 +29,12 @@
 				</div>
 			</div>
 			<div class="b-columns__col b-columns__col_20 mob_50 mob_center">
-				<div class="h-wrap h-wrap_mg-bt_10">
+				<div class="h-wrap h-wrap_mg-bt_10 g-hide">
 					<div class="b-text b-text_size_20 b-text_bold">
 						Product
 					</div>
 				</div>
-				<ul role="list" class="b-list">
+				<ul role="list" class="b-list g-hide">
 					{% for item in footer.product_list %}
 					<li class="b-list__item b-list__item_mg-bt_10 mob_center">
 						<a href="{{ item.footer_link|link }}" class="b-link">
@@ -45,12 +45,12 @@
 				</ul>
 			</div>
 			<div class="b-columns__col b-columns__col_15 mob_50 mob_center">
-				<div class="h-wrap h-wrap_mg-bt_10">
+				<div class="h-wrap h-wrap_mg-bt_10 g-hide">
 					<div class="b-text b-text_size_20 b-text_bold">
 						Company
 					</div>
 				</div>
-				<ul role="list" class="b-list">
+				<ul role="list" class="b-list g-hide">
 					{% for item in footer.company_list %}
 					<li class="b-list__item b-list__item_mg-bt_10 mob_center">
 						<a href="{{ item.footer_link|link }}" class="b-link">
@@ -61,12 +61,12 @@
 				</ul>
 			</div>
 			<div class="b-columns__col b-columns__col_25 mob_100 mob_center">
-				<div class="h-wrap h-wrap_mg-bt_10">
+				<div class="h-wrap h-wrap_mg-bt_10 g-hide">
 					<div class="b-text b-text_size_20 b-text_bold">
 						Contacts
 					</div>
 				</div>
-				<div class="h-wrap h-wrap_mg-bt_20">
+				<div class="h-wrap h-wrap_mg-bt_20 g-hide">
 					<div class="b-text">
 						{{ footersettings.adress }}
 					</div>
@@ -84,7 +84,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="b-list__item b-list__item_mg-bt_10 b-list__item_flex-v">
+					<li class="b-list__item b-list__item_mg-bt_10 b-list__item_flex-v g-hide">
 						<div class="h-wrap h-wrap_mg-bt_5">
 							<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
 								Technical Support:
@@ -101,7 +101,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="b-list__item b-list__item_mg-bt_10 b-list__item_flex-v">
+					<li class="b-list__item b-list__item_mg-bt_10 b-list__item_flex-v g-hide">
 						<div class="h-wrap h-wrap_mg-bt_5">
 							<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
 								Sales and Business:

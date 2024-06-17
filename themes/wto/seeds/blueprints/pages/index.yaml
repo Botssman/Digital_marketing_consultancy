@@ -268,6 +268,12 @@ fields:
                                             text|raw:
                                                 label: text|raw
                                                 type: text
+                    text_btn:
+                        label: text_btn
+                        type: text
+                    link_btn:
+                        label: link_btn
+                        type: text
                     hide_content:
                         label: 'Скрыть блок'
                         type: switch

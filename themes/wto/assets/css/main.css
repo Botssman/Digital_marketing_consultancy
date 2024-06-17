@@ -3886,7 +3886,7 @@ h1 {
 
 .footer__head {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 0;
 }
 
 .b-app.b-app_mg-bt_30 {

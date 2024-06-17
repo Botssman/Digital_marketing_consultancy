@@ -30,3 +30,9 @@ fields:
                             text:
                                 label: Text item
                                 type: textarea
+    text_btn:
+        label: Text btn
+        type: text
+    link_btn:
+        label: Link btn
+        type: text

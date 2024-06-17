@@ -60,4 +60,4 @@ fields:
                                                 type: text
                                             menu_dropdown_link:
                                                 label: Link
-                                                type: pagefinder
+                                                type: text

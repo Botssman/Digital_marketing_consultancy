@@ -26,7 +26,7 @@
 						<div class="b-text">
 							{{ item.text_list }}
 						</div>
-						<a href="{{ item.link_list }}" class="b-card-post__links">
+						<a href="{{ item.link_list|media }}" class="b-card-post__links" download="{{ item.text_document }}">
 							{{ item.text_link_list }}
 						</a>
 					</div>

@@ -187,8 +187,8 @@ fields:
                                 text_link_list:
                                     label: text_link_list
                                     type: text
-                                link_list:
-                                    label: link_list
+                                link_list|media:
+                                    label: link_list|media
                                     type: text
                     press_room_media_kit_image:
                         label: press_room_media_kit_image

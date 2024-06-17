@@ -33,7 +33,10 @@ fields:
                     label: Text link
                     type: text
                 link_list:
-                    label: Link
+                    label: File
+                    type: mediafinder
+                text_document:
+                    label: Text text_document
                     type: text
     press_room_media_kit_image:
         label: Image

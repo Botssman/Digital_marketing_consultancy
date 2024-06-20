@@ -22,3 +22,7 @@ fields:
     link_btn:
         label: Link btn
         type: text
+    hide_content:
+        label: Hide block
+        type: switch
+        default: false

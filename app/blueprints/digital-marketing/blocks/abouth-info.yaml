@@ -19,3 +19,7 @@ fields:
     image_mob:
         label: Image mobile
         type: mediafinder
+    hide_content:
+        label: Hide block
+        type: switch
+        default: false

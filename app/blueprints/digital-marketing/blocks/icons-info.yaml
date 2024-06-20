@@ -27,3 +27,7 @@ fields:
                 text_info:
                     label: Text info
                     type: text
+    hide_content:
+        label: Hide block
+        type: switch
+        default: false

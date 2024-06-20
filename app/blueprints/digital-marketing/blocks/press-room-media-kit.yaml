@@ -43,3 +43,7 @@ fields:
         type: mediafinder
         mode: image
         maxItems: 1
+    hide_content:
+        label: Hide block
+        type: switch
+        default: false

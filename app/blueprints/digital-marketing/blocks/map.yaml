@@ -1,0 +1,16 @@
+uuid: sections-map
+name: Section abouth info
+type: mixin
+handle: Blocks\AbouthInfo
+
+fields:
+    id: 
+        label: Id sections
+        type: text
+    map: 
+        label: Map code
+        type: richeditor
+    hide_content:
+        label: Hide block
+        type: switch
+        default: false

@@ -159,6 +159,16 @@ fields:
                         label: 'Скрыть блок'
                         type: switch
                         default: false
+            map:
+                name: map
+                fields:
+                    map|raw:
+                        label: map|raw
+                        type: text
+                    hide_content:
+                        label: 'Скрыть блок'
+                        type: switch
+                        default: false
             press_room_media_kit:
                 name: press-room-media-kit
                 fields:
@@ -256,6 +266,9 @@ fields:
                                     maxItems: '1'
                                 title_card|raw:
                                     label: title_card|raw
+                                    type: text
+                                desc:
+                                    label: desc
                                     type: text
                                 list:
                                     label: Список

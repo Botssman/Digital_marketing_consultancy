@@ -19,6 +19,9 @@ fields:
                 image:
                     label: Image card
                     type: mediafinder
+                desc:
+                    label: Description
+                    type: text
                 list:
                     label: Add item
                     type: repeater

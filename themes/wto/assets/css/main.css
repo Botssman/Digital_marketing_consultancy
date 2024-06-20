@@ -5162,6 +5162,10 @@ h1 {
   display: none;
 }
 
+.b-map {
+  width: 100%;
+}
+
 @media screen and (min-width: 1280px) {
   body {
     font-size: 1.15vw;
@@ -5628,6 +5632,10 @@ h1 {
 
   .b-home-wrap {
     width: 63.125em;
+  }
+
+  .b-list__dot.b-list__dot_24 {
+    margin-top: 2px;
   }
 
   .b-card-project__img {

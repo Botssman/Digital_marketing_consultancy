@@ -77,6 +77,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\ContactUsForm
+            map:
+                name: Section map
+                description: Section map
+                icon: icon-tasks
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Map
             forms:
                 name: Forms
                 icon: icon-columns

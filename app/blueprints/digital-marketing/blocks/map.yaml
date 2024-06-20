@@ -1,8 +1,7 @@
 uuid: sections-map
-name: Section abouth info
+name: Section map
 type: mixin
-handle: Blocks\AbouthInfo
-
+handle: Blocks\Map
 fields:
     id: 
         label: Id sections

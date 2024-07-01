@@ -23,9 +23,11 @@ fields:
     question_link_btn:
         label: Link btn
         type: text
+        tab: Questions
     show_button:
         type: switch
         label: Hide btn
+        tab: Questions
     question_lists:
         type: repeater
         titleFrom: Questions lists

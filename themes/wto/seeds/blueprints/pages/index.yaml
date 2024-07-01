@@ -247,6 +247,9 @@ fields:
                     contact_us_form_title:
                         label: contact_us_form_title
                         type: text
+                    subtitle|raw:
+                        label: subtitle|raw
+                        type: text
                     hide_content:
                         label: 'Скрыть блок'
                         type: switch

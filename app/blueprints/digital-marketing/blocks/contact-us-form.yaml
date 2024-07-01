@@ -4,11 +4,14 @@ type: mixin
 handle: Blocks\ContactUsForm
 
 fields:
-    id: 
+    id:
         label: Id sections
         type: text
     contact_us_form_title:
         label: Title
+        type: text
+    subtitle:
+        label: Subtitle
         type: text
     contact_us_form_image:
         label: Image

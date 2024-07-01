@@ -5,7 +5,7 @@ handle: Blocks\Through\Questions
 multisite: true
 
 fields:
-    id: 
+    id:
         label: Id sections
         type: text
     question_title:
@@ -23,9 +23,9 @@ fields:
     question_link_btn:
         label: Link btn
         type: text
-    hide_button:
+    show_button:
         type: switch
-        label: Hide btn
+        label: Show btn
     question_lists:
         type: repeater
         titleFrom: Questions lists

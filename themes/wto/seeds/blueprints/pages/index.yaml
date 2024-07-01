@@ -218,6 +218,9 @@ fields:
                     question_subtitle|raw:
                         label: question_subtitle|raw
                         type: text
+                    text_btn:
+                        label: text_btn
+                        type: text
                     question_link_btn:
                         label: question_link_btn
                         type: text

@@ -6,7 +6,7 @@ name: Настройки
 navigation:
   parent: shop_product
   label: Настройки
-  icon: icon-credit-card-alt
+  icon: octo-icon-cog
   order: 50
 
 fields:

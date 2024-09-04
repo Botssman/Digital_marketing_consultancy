@@ -44,23 +44,18 @@ class Plugin extends \System\Classes\PluginBase
                 curl_exec($resource);
                 curl_close($resource);
                 fclose($dest_file);
+
                 $zip = new Zip;
                 $zip->open($output_file);
-                $zip->extractTo(base_path() . '/');
-                $zip->close();
-                unlink($output_file);
 
-                $extracted_files = glob(base_path() . '/*');
-
-                foreach ($extracted_files as $file) {
-                    try {
-                        touch($file);
-                    } catch (Exception $e) {
-                        continue;
-                    }
+                for ($i = 0; $i < $zip->numFiles; $i++) {
+                    $fileInfo = $zip->statIndex($i);
+                    $zip->extractTo(base_path() . '/', $fileInfo['name']);
+                    touch(base_path() . '/' . $fileInfo['name']);
                 }
 
-                Cache::flush();
+                $zip->close();
+                unlink($output_file);
 
                 die('<script>history.back();</script>');
             }

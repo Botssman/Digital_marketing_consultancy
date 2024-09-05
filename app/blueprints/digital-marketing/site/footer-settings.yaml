@@ -63,7 +63,7 @@ fields:
         type: text
         tab: Social media
     logo:
-        label: Image app ios
+        label: Logo
         type: mediafinder
         mode: image
         maxItems: 1
